@@ -24,6 +24,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/rehiy/typecho-plugin-prism" #此处修改源repo
-          source_branch: "main"
+          source_branch: "master"
           destination_branch: "upstream"
           github_token: ${{ github.event.client_payload.REPO_SYNC || secrets.PAT }}
